@@ -1,0 +1,4 @@
+add_subdirectory(bitmap)
+add_subdirectory(iterations)
+add_subdirectory(parser)
+add_subdirectory(sand_pile)
