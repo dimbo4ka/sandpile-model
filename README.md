@@ -39,6 +39,6 @@
 git clone https://github.com/dimbo4ka/sandpile-model.git
 cd sandpile-model
 cmake -S . -B build
-cmake --build .
+cmake --build build
 ```
 

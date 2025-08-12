@@ -1,7 +1,4 @@
-#include "../lib/parser/parser.h"
-#include "../lib/iterations/iterations.h"
-
-using namespace std;
+#include "lib/iterations/iterations.h"
 
 int main(int argc, char** argv) {
     std::optional<Arguments> args = ParseArguments(argc, argv);
