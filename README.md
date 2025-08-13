@@ -33,12 +33,24 @@
 Формат файла:
 Каждая строчка содержит информацию об одной ячейке, в виде (x-координаты, y-координаты, количество песчинок), разделенных символом табуляции. Количество песчинок гарантированно влезет в `uint64_t`, координаты гарантированно влезают в `int16_t`
 
-## Cборка
+## Cборка и запуск
+
+### 1. Локальная (CMake)
 
 ```bash
 git clone https://github.com/dimbo4ka/sandpile-model.git
 cd sandpile-model
 cmake -S . -B build
 cmake --build build
+build/bin/sandpile-model
+```
+
+### 2. Docker
+
+
+```bash
+git clone https://github.com/dimbo4ka/sandpile-model.git
+cd sandpile-model
+docker buildx build --platform linux/amd64,linux/arm64 -t sandpile-model:latest .
 ```
 
